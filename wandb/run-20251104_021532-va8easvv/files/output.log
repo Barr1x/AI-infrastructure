@@ -1,0 +1,25 @@
+  0%|                                                                              | 0/2378 [00:00<?, ?it/s]WARNING:transformers_modules.GPTNeoX-160M-WikiText-512-flash_attention_2.modeling_custom:`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+  0%|                                                                      | 3/2378 [00:03<38:35,  1.03it/s]Traceback (most recent call last):
+{'loss': 5.0458, 'grad_norm': 1.234375, 'learning_rate': 2.521008403361344e-06, 'epoch': 0.0}
+{'loss': 4.9083, 'grad_norm': 1.3203125, 'learning_rate': 5.042016806722688e-06, 'epoch': 0.0}
+{'loss': 5.077, 'grad_norm': 1.125, 'learning_rate': 7.563025210084033e-06, 'epoch': 0.0}
+  File "/home/ubuntu/AI-infrastructure/lm_train.py", line 94, in <module>
+    trainer.train()
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 2388, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 3518, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/accelerator.py", line 2196, in backward
+    loss.backward(**kwargs)
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

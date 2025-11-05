@@ -1,0 +1,25 @@
+  0%|                                                                                  | 0/19 [00:00<?, ?it/s]WARNING:transformers_modules.GPTNeoX-160m.modeling_custom:`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+100%|█████████████████████████████████████████████████████████████████████████| 19/19 [05:58<00:00, 18.89s/it]
+{'loss': 10.9561, 'grad_norm': 3.765625, 'learning_rate': 4.9999999999999996e-05, 'epoch': 0.05}
+{'loss': 10.9516, 'grad_norm': 3.40625, 'learning_rate': 9.999999999999999e-05, 'epoch': 0.1}
+{'loss': 10.4915, 'grad_norm': 2.875, 'learning_rate': 0.00015, 'epoch': 0.16}
+{'loss': 10.1434, 'grad_norm': 2.203125, 'learning_rate': 0.00019999999999999998, 'epoch': 0.21}
+{'loss': 9.8711, 'grad_norm': 1.9140625, 'learning_rate': 0.00025, 'epoch': 0.26}
+{'loss': 9.664, 'grad_norm': 1.875, 'learning_rate': 0.0003, 'epoch': 0.31}
+{'loss': 9.431, 'grad_norm': 1.875, 'learning_rate': 0.00029564127261390776, 'epoch': 0.36}
+{'loss': 9.3437, 'grad_norm': 1.625, 'learning_rate': 0.0002828184038479814, 'epoch': 0.42}
+{'loss': 9.1422, 'grad_norm': 1.515625, 'learning_rate': 0.00026227661222566516, 'epoch': 0.47}
+{'loss': 8.9468, 'grad_norm': 1.4765625, 'learning_rate': 0.00023520971200967334, 'epoch': 0.52}
+{'loss': 8.8699, 'grad_norm': 1.2890625, 'learning_rate': 0.0002031907330563803, 'epoch': 0.57}
+{'loss': 8.6262, 'grad_norm': 1.25, 'learning_rate': 0.00016808050203829842, 'epoch': 0.62}
+{'loss': 8.58, 'grad_norm': 1.2421875, 'learning_rate': 0.00013191949796170156, 'epoch': 0.68}
+{'loss': 8.4336, 'grad_norm': 1.203125, 'learning_rate': 9.680926694361964e-05, 'epoch': 0.73}
+{'loss': 8.3945, 'grad_norm': 1.0859375, 'learning_rate': 6.479028799032664e-05, 'epoch': 0.78}
+{'loss': 8.3795, 'grad_norm': 1.0703125, 'learning_rate': 3.7723387774334816e-05, 'epoch': 0.83}
+{'loss': 8.3737, 'grad_norm': 1.0390625, 'learning_rate': 1.718159615201853e-05, 'epoch': 0.88}
+{'loss': 8.3223, 'grad_norm': 1.1015625, 'learning_rate': 4.358727386092198e-06, 'epoch': 0.94}
+{'loss': 8.3224, 'grad_norm': 1.0078125, 'learning_rate': 0.0, 'epoch': 0.99}
+100%|█████████████████████████████████████████████████████████████████████| 1875/1875 [04:50<00:00,  6.44it/s]
+{'eval_loss': 8.314203262329102, 'eval_runtime': 291.1626, 'eval_samples_per_second': 51.518, 'eval_steps_per_second': 6.44, 'epoch': 0.99}
+{'train_runtime': 359.7723, 'train_samples_per_second': 2.78, 'train_steps_per_second': 0.053, 'train_loss': 9.22333782597592, 'epoch': 0.99}
+Perplexity (2048): 4081.43

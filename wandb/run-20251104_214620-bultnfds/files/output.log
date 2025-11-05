@@ -1,0 +1,44 @@
+  0%|                                                                                                   | 0/38 [00:00<?, ?it/s]WARNING:transformers_modules.GPTNeoX-160m.modeling_custom:`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+                                                                                                                               
+{'loss': 10.9558, 'grad_norm': 3.9375, 'learning_rate': 0.00015, 'epoch': 0.03}
+{'loss': 10.9563, 'grad_norm': 3.71875, 'learning_rate': 0.0003, 'epoch': 0.05}
+{'loss': 10.2446, 'grad_norm': 2.359375, 'learning_rate': 0.00045, 'epoch': 0.08}
+{'loss': 9.8463, 'grad_norm': 1.890625, 'learning_rate': 0.0006, 'epoch': 0.1}
+{'loss': 9.4673, 'grad_norm': 2.0, 'learning_rate': 0.0005987202528885103, 'epoch': 0.13}
+{'loss': 9.2425, 'grad_norm': 1.9375, 'learning_rate': 0.0005948919299051705, 'epoch': 0.16}
+{'loss': 9.0132, 'grad_norm': 1.4609375, 'learning_rate': 0.0005885476929518457, 'epoch': 0.18}
+{'loss': 8.6559, 'grad_norm': 1.328125, 'learning_rate': 0.0005797416688213067, 'epoch': 0.21}
+{'loss': 8.3973, 'grad_norm': 1.0625, 'learning_rate': 0.0005685489874065187, 'epoch': 0.23}
+{'loss': 8.1246, 'grad_norm': 1.3984375, 'learning_rate': 0.0005550651407188842, 'epoch': 0.26}
+{'loss': 8.0688, 'grad_norm': 1.0859375, 'learning_rate': 0.0005394051681840719, 'epoch': 0.29}
+{'loss': 7.9403, 'grad_norm': 0.78515625, 'learning_rate': 0.0005217026751661977, 'epoch': 0.31}
+{'loss': 7.919, 'grad_norm': 0.828125, 'learning_rate': 0.0005021086930939671, 'epoch': 0.34}
+{'loss': 7.749, 'grad_norm': 0.71875, 'learning_rate': 0.0004807903909137769, 'epoch': 0.36}
+{'loss': 7.9789, 'grad_norm': 0.99609375, 'learning_rate': 0.0004579296488632067, 'epoch': 0.39}
+{'loss': 7.7156, 'grad_norm': 0.9375, 'learning_rate': 0.0004337215067329615, 'epoch': 0.42}
+{'loss': 7.6691, 'grad_norm': 0.6953125, 'learning_rate': 0.0004083724998561459, 'epoch': 0.44}
+{'loss': 7.9848, 'grad_norm': 2.40625, 'learning_rate': 0.0003820988970216249, 'epoch': 0.47}
+{'loss': 7.8579, 'grad_norm': 1.03125, 'learning_rate': 0.00035512485534497113, 'epoch': 0.49}
+{'loss': 7.7517, 'grad_norm': 1.109375, 'learning_rate': 0.0003276805078389906, 'epoch': 0.52}
+{'loss': 7.872, 'grad_norm': 0.91796875, 'learning_rate': 0.0003, 'epoch': 0.55}
+{'loss': 7.8421, 'grad_norm': 0.66796875, 'learning_rate': 0.0002723194921610094, 'epoch': 0.57}
+{'loss': 7.692, 'grad_norm': 0.88671875, 'learning_rate': 0.0002448751446550288, 'epoch': 0.6}
+{'loss': 7.6938, 'grad_norm': 0.81640625, 'learning_rate': 0.00021790110297837512, 'epoch': 0.62}
+{'loss': 7.6962, 'grad_norm': 0.88671875, 'learning_rate': 0.0001916275001438541, 'epoch': 0.65}
+{'loss': 7.7544, 'grad_norm': 0.55078125, 'learning_rate': 0.00016627849326703853, 'epoch': 0.68}
+{'loss': 7.5274, 'grad_norm': 0.5625, 'learning_rate': 0.0001420703511367932, 'epoch': 0.7}
+{'loss': 7.5909, 'grad_norm': 0.75, 'learning_rate': 0.0001192096090862231, 'epoch': 0.73}
+{'loss': 7.6007, 'grad_norm': 0.625, 'learning_rate': 9.789130690603283e-05, 'epoch': 0.75}
+{'loss': 7.5182, 'grad_norm': 0.59765625, 'learning_rate': 7.82973248338023e-05, 'epoch': 0.78}
+{'loss': 7.7482, 'grad_norm': 0.66796875, 'learning_rate': 6.0594831815928145e-05, 'epoch': 0.81}
+{'loss': 7.5786, 'grad_norm': 0.7578125, 'learning_rate': 4.49348592811158e-05, 'epoch': 0.83}
+{'loss': 7.6298, 'grad_norm': 0.6640625, 'learning_rate': 3.1451012593481326e-05, 'epoch': 0.86}
+{'loss': 7.6572, 'grad_norm': 0.62109375, 'learning_rate': 2.0258331178693286e-05, 'epoch': 0.88}
+{'loss': 7.5937, 'grad_norm': 0.59375, 'learning_rate': 1.1452307048154285e-05, 'epoch': 0.91}
+{'loss': 7.659, 'grad_norm': 0.53515625, 'learning_rate': 5.108070094829464e-06, 'epoch': 0.94}
+{'loss': 7.5332, 'grad_norm': 0.60546875, 'learning_rate': 1.2797471114896595e-06, 'epoch': 0.96}
+{'loss': 7.5963, 'grad_norm': 0.64453125, 'learning_rate': 0.0, 'epoch': 0.99}
+100%|█████████████████████████████████████████████████████████████████████| 1875/1875 [04:50<00:00,  6.45it/s]
+{'eval_loss': 7.587132930755615, 'eval_runtime': 290.9958, 'eval_samples_per_second': 51.547, 'eval_steps_per_second': 6.443, 'epoch': 0.99}
+{'train_runtime': 360.0229, 'train_samples_per_second': 2.778, 'train_steps_per_second': 0.106, 'train_loss': 8.19269905592266, 'epoch': 0.99}
+Perplexity (2048): 1972.65

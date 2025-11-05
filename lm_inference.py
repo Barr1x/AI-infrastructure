@@ -9,7 +9,7 @@ BATCH_SIZE = 4
 NEW_TOKENS = [5, 10, 50]
 REPEATS = 5
 
-model_id = ... #path to your model
+model_id = "RevFlash/GPTNeoX-160M-minipile-2048"
 
 def timed_generate_huggingface():
     tokenizer = AutoTokenizer.from_pretrained(model_id)
@@ -24,6 +24,7 @@ def timed_generate_huggingface():
             "hello"
         ] * BATCH_SIZE
     inputs = tokenizer(text, return_tensors="pt").to("cuda:0")
+    
 
     for num_new_tokens in NEW_TOKENS:
         start_event = torch.cuda.Event(enable_timing=True)
@@ -34,7 +35,7 @@ def timed_generate_huggingface():
 
         start_event.record()
         for _ in range(REPEATS):
-            # TODO: implement model.generate() here
+            output = model.generate(**inputs, max_new_tokens=num_new_tokens)
 
         end_event.record()
         torch.cuda.synchronize()
@@ -54,6 +55,7 @@ def timed_generate_vllm():
 
     for num_new_tokens in NEW_TOKENS:
         # TODO: implement sampling_params = SamplingParams() with the correct arguments
+        sampling_params = SamplingParams(max_tokens=num_new_tokens, temperature=0.0, top_p=1.0)
 
         start_event = torch.cuda.Event(enable_timing=True)
         end_event = torch.cuda.Event(enable_timing=True)
@@ -64,6 +66,7 @@ def timed_generate_vllm():
         start_event.record()
         for _ in range(REPEATS):
             # TODO: implement llm.generate() here
+            output = llm.generate(text, sampling_params=sampling_params)
         end_event.record()
         torch.cuda.synchronize()
 

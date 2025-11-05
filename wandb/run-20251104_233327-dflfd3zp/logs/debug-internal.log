@@ -1,0 +1,16 @@
+{"time":"2025-11-04T23:33:27.249340364Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-04T23:33:27.415948442Z","level":"INFO","msg":"stream: created new stream","id":"dflfd3zp"}
+{"time":"2025-11-04T23:33:27.416008753Z","level":"INFO","msg":"handler: started","stream_id":"dflfd3zp"}
+{"time":"2025-11-04T23:33:27.416100575Z","level":"INFO","msg":"stream: started","id":"dflfd3zp"}
+{"time":"2025-11-04T23:33:27.416133556Z","level":"INFO","msg":"writer: started","stream_id":"dflfd3zp"}
+{"time":"2025-11-04T23:33:27.416155826Z","level":"INFO","msg":"sender: started","stream_id":"dflfd3zp"}
+{"time":"2025-11-04T23:43:33.070446581Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":3841}
+{"time":"2025-11-04T23:43:34.948160838Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":22}
+{"time":"2025-11-05T00:41:12.747719592Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/revflash/huggingface/dflfd3zp/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-11-05T05:02:28.670314487Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":128890}
+{"time":"2025-11-05T05:02:28.675598972Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":11}
+{"time":"2025-11-05T05:07:20.261846262Z","level":"INFO","msg":"stream: closing","id":"dflfd3zp"}
+{"time":"2025-11-05T05:07:20.564359651Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-05T05:07:20.805252827Z","level":"INFO","msg":"handler: closed","stream_id":"dflfd3zp"}
+{"time":"2025-11-05T05:07:20.80540389Z","level":"INFO","msg":"sender: closed","stream_id":"dflfd3zp"}
+{"time":"2025-11-05T05:07:20.805440861Z","level":"INFO","msg":"stream: closed","id":"dflfd3zp"}

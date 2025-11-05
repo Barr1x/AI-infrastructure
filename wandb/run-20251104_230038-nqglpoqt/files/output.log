@@ -1,0 +1,15 @@
+  0%|                                                                                   | 0/9 [00:00<?, ?it/s]WARNING:transformers_modules.GPTNeoX-160m.modeling_custom:`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+100%|███████████████████████████████████████████████████████████████████████████| 9/9 [05:54<00:00, 39.43s/it]
+{'loss': 10.9538, 'grad_norm': 3.546875, 'learning_rate': 0.00015, 'epoch': 0.1}
+{'loss': 10.9491, 'grad_norm': 3.546875, 'learning_rate': 0.0003, 'epoch': 0.21}
+{'loss': 10.1836, 'grad_norm': 2.40625, 'learning_rate': 0.00045, 'epoch': 0.31}
+{'loss': 9.7645, 'grad_norm': 1.9453125, 'learning_rate': 0.0006, 'epoch': 0.42}
+{'loss': 9.4643, 'grad_norm': 1.7265625, 'learning_rate': 0.0005427050983124842, 'epoch': 0.52}
+{'loss': 9.148, 'grad_norm': 1.4609375, 'learning_rate': 0.0003927050983124842, 'epoch': 0.62}
+{'loss': 8.831, 'grad_norm': 1.4453125, 'learning_rate': 0.0002072949016875158, 'epoch': 0.73}
+{'loss': 8.6372, 'grad_norm': 1.328125, 'learning_rate': 5.7294901687515795e-05, 'epoch': 0.83}
+{'loss': 8.529, 'grad_norm': 1.1875, 'learning_rate': 0.0, 'epoch': 0.94}
+100%|█████████████████████████████████████████████████████████████████████| 1875/1875 [04:50<00:00,  6.45it/s]
+{'eval_loss': 8.49011516571045, 'eval_runtime': 290.8851, 'eval_samples_per_second': 51.567, 'eval_steps_per_second': 6.446, 'epoch': 0.94}
+{'train_runtime': 355.6691, 'train_samples_per_second': 2.812, 'train_steps_per_second': 0.025, 'train_loss': 9.606736183166504, 'epoch': 0.94}
+Perplexity (2048): 4866.43

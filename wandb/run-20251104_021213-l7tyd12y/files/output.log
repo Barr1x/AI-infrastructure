@@ -1,0 +1,76 @@
+  0%|                                                                   | 12/9511 [00:06<1:27:14,  1.81it/s]Traceback (most recent call last):
+{'loss': 4.8477, 'grad_norm': 2.046875, 'learning_rate': 6.30252100840336e-07, 'epoch': 0.0}
+{'loss': 5.0938, 'grad_norm': 1.46875, 'learning_rate': 1.260504201680672e-06, 'epoch': 0.0}
+{'loss': 5.0314, 'grad_norm': 1.7578125, 'learning_rate': 1.8907563025210083e-06, 'epoch': 0.0}
+{'loss': 5.2112, 'grad_norm': 1.5703125, 'learning_rate': 2.521008403361344e-06, 'epoch': 0.0}
+{'loss': 5.1636, 'grad_norm': 1.6953125, 'learning_rate': 3.1512605042016808e-06, 'epoch': 0.0}
+{'loss': 4.7043, 'grad_norm': 1.9921875, 'learning_rate': 3.7815126050420167e-06, 'epoch': 0.0}
+{'loss': 4.9814, 'grad_norm': 1.578125, 'learning_rate': 4.4117647058823526e-06, 'epoch': 0.0}
+{'loss': 4.7837, 'grad_norm': 1.828125, 'learning_rate': 5.042016806722688e-06, 'epoch': 0.0}
+{'loss': 4.9025, 'grad_norm': 1.515625, 'learning_rate': 5.672268907563024e-06, 'epoch': 0.0}
+{'loss': 5.0922, 'grad_norm': 1.421875, 'learning_rate': 6.3025210084033615e-06, 'epoch': 0.0}
+{'loss': 5.2828, 'grad_norm': 1.578125, 'learning_rate': 6.932773109243697e-06, 'epoch': 0.0}
+{'loss': 5.0241, 'grad_norm': 1.5, 'learning_rate': 7.563025210084033e-06, 'epoch': 0.0}
+  File "/home/ubuntu/AI-infrastructure/lm_train.py", line 94, in <module>
+    trainer.train()
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 2388, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 3485, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 3532, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 820, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 808, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/GPTNeoX-160M-WikiText-512-flash_attention_2/modeling_custom.py", line 1152, in forward
+    outputs = self.gpt_neox(
+              ^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/GPTNeoX-160M-WikiText-512-flash_attention_2/modeling_custom.py", line 981, in forward
+    outputs = layer(
+              ^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/GPTNeoX-160M-WikiText-512-flash_attention_2/modeling_custom.py", line 732, in forward
+    attention_layer_outputs = self.attention(
+                              ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/GPTNeoX-160M-WikiText-512-flash_attention_2/modeling_custom.py", line 215, in forward
+    attn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/GPTNeoX-160M-WikiText-512-flash_attention_2/modeling_custom.py", line 340, in _attn
+    mask_value = torch.tensor(mask_value, dtype=attn_scores.dtype).to(attn_scores.device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

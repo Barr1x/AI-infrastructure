@@ -1,0 +1,43 @@
+{
+  "os":  "Linux-6.8.0-1023-aws-x86_64-with-glibc2.35",
+  "python":  "CPython 3.11.14",
+  "startedAt":  "2025-11-04T02:08:26.140265Z",
+  "args":  [
+    "configs/512_eager_wikitext.json"
+  ],
+  "program":  "/home/ubuntu/AI-infrastructure/lm_train.py",
+  "codePath":  "lm_train.py",
+  "codePathLocal":  "lm_train.py",
+  "git":  {
+    "remote":  "https://github.com/Barr1x/AI-infrastructure.git",
+    "commit":  "95648c3c6bf5de304174f3ab8bfa043a93b0d4e7"
+  },
+  "email":  "boningx@andrew.cmu.edu",
+  "root":  "/home/ubuntu/AI-infrastructure",
+  "host":  "ip-172-31-32-45",
+  "executable":  "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/bin/python",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "gpu":  "NVIDIA A10G",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "103865303040",
+      "used":  "42977054720"
+    }
+  },
+  "memory":  {
+    "total":  "33263804416"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A10G",
+      "memoryTotal":  "24146608128",
+      "cudaCores":  10240,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-4227a8e9-1b75-2057-dbd0-a666e4c72a23"
+    }
+  ],
+  "cudaVersion":  "12.4",
+  "writerId":  "o2mugv8mf4xyenr40tc6b61la7lwgqk8"
+}

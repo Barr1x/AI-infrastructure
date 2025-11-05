@@ -1,0 +1,44 @@
+  0%|                                                                              | 0/2038 [00:00<?, ?it/s]WARNING:transformers_modules.GPTNeoX-160M-WikiText-512-flash_attention_2.modeling_custom:`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+  0%|                                                                      | 1/2038 [00:01<45:47,  1.35s/it]Traceback (most recent call last):
+{'loss': 5.0457, 'grad_norm': 1.21875, 'learning_rate': 2.941176470588235e-06, 'epoch': 0.0}
+  File "/home/ubuntu/AI-infrastructure/lm_train.py", line 94, in <module>
+    trainer.train()
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 2388, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 3485, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 3532, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 820, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 808, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 787, in convert_to_fp32
+    return recursively_apply(_convert_to_fp32, tensor, test_type=_is_fp16_bf16_tensor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 119, in recursively_apply
+    {
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 120, in <dictcomp>
+    k: recursively_apply(
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 127, in recursively_apply
+    return func(data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/accelerate/utils/operations.py", line 779, in _convert_to_fp32
+    return tensor.float()
+           ^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 5.37 GiB. GPU 0 has a total capacity of 21.98 GiB of which 3.89 GiB is free. Including non-PyTorch memory, this process has 18.08 GiB memory in use. Of the allocated memory 12.34 GiB is allocated by PyTorch, and 5.44 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

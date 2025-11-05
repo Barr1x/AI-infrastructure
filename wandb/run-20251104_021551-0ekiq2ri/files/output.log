@@ -1,0 +1,16 @@
+  0%|                                                                              | 0/2195 [00:00<?, ?it/s]WARNING:transformers_modules.GPTNeoX-160M-WikiText-512-flash_attention_2.modeling_custom:`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+  0%|▏                                                                     | 5/2195 [00:05<35:17,  1.03it/s]Traceback (most recent call last):
+{'loss': 5.0456, 'grad_norm': 1.2421875, 'learning_rate': 2.727272727272727e-06, 'epoch': 0.0}
+{'loss': 4.9347, 'grad_norm': 1.21875, 'learning_rate': 5.454545454545454e-06, 'epoch': 0.0}
+{'loss': 5.0322, 'grad_norm': 1.1640625, 'learning_rate': 8.181818181818181e-06, 'epoch': 0.0}
+{'loss': 4.8931, 'grad_norm': 1.2265625, 'learning_rate': 1.0909090909090907e-05, 'epoch': 0.0}
+{'loss': 5.0115, 'grad_norm': 1.1875, 'learning_rate': 1.3636363636363635e-05, 'epoch': 0.0}
+  File "/home/ubuntu/AI-infrastructure/lm_train.py", line 94, in <module>
+    trainer.train()
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cmu-llms-hw4/lib/python3.11/site-packages/transformers/trainer.py", line 2393, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
